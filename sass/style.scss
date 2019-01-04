@@ -509,5 +509,100 @@
             color: #555555;
         }
     }
+}
+.contact{
+    padding: 5% 10%;
+    padding-bottom: 30%;
+    position: relative;
+    background-color: #212121;
+
+    .form{
+        text-align: left;
+        position: relative;
+
+        form{
+            position: absolute;
+            width: 50%;
+            @extend %flex-placeholder;
+            flex-wrap:wrap;
+            margin: 10% 0;
+            input{
+                font-family: $SSPR;
+                
+            }
+            .email{
+                background-color: #212121;
+                border: 0px;
+                color: #999999;
+                width: 48%;
+                border-bottom: 1px solid #999999;
+                margin: 5% 0;
+            }
+            .message{
+                width: 99%;
+                background-color: #212121;
+                border: 0px;
+                border-bottom: 1px solid #999999;
+                color: #999999;
+            }
+            .submit{
+                margin-top: 30%;
+                background-color: #212121;
+                border: 0px;
+                color: #999999;
+            }
+        }
+        h2{
+            font-family: $SSPB;
+            font-size: 22px;
+            color: #EEEEEE;
+            text-transform: uppercase;
+        }
+        p{
+            margin-top: 5%;
+            font-family: $SSPR;
+            font-size: 14px;
+            color: #999999;
+            line-height: 24px;
+        }
+    }
+    .social-networks{
+        position: absolute;
+        right: 20%;
+        top: 12.5%;
+
+        h2{
+            font-family: $SSPSB;
+            font-size: 15px;
+            margin-bottom: 40%;
+            color: #999999;
+        }
+        li{
+            margin: 15% 0;
+            a{
+                font-family: $SSPR;
+                font-size: 14px;
+                color: #999999;
+                @include transition;
+
+                &:hover{
+                    color: #E64A19;
+                }
+                
+            }
+        }
+    }
+}
+footer{
+    background-color: #212121;
+    padding: 5% 10%;
+    h2{
+        border-top: 1px solid#999999;
+        color: #AAAAAA;
+        font-family: $SSPR;
+        font-size: 14px;
+        margin-top: -5%;
+        padding-top: 1%;
+    }
 }    
  

@@ -29,7 +29,7 @@
 .container {
   padding: 0 5%; }
 
-.main-header .container nav, .article-container .container, .featured-article-container .container, .our-team .article-container, .break-section2 {
+.main-header .container nav, .article-container .container, .featured-article-container .container, .our-team .article-container, .break-section2, .contact .form form {
   display: flex;
   justify-content: space-between; }
 
@@ -422,3 +422,80 @@
       font-family: "Source Sans Pro Regular", sans-serif;
       font-size: 14px;
       color: #555555; }
+
+.contact {
+  padding: 5% 10%;
+  padding-bottom: 30%;
+  position: relative;
+  background-color: #212121; }
+  .contact .form {
+    text-align: left;
+    position: relative; }
+    .contact .form form {
+      position: absolute;
+      width: 50%;
+      flex-wrap: wrap;
+      margin: 10% 0; }
+      .contact .form form input {
+        font-family: "Source Sans Pro Regular", sans-serif; }
+      .contact .form form .email {
+        background-color: #212121;
+        border: 0px;
+        color: #999999;
+        width: 48%;
+        border-bottom: 1px solid #999999;
+        margin: 5% 0; }
+      .contact .form form .message {
+        width: 99%;
+        background-color: #212121;
+        border: 0px;
+        border-bottom: 1px solid #999999;
+        color: #999999; }
+      .contact .form form .submit {
+        margin-top: 30%;
+        background-color: #212121;
+        border: 0px;
+        color: #999999; }
+    .contact .form h2 {
+      font-family: "Source Sans Pro Bold", sans-serif;
+      font-size: 22px;
+      color: #EEEEEE;
+      text-transform: uppercase; }
+    .contact .form p {
+      margin-top: 5%;
+      font-family: "Source Sans Pro Regular", sans-serif;
+      font-size: 14px;
+      color: #999999;
+      line-height: 24px; }
+  .contact .social-networks {
+    position: absolute;
+    right: 20%;
+    top: 12.5%; }
+    .contact .social-networks h2 {
+      font-family: "Source Sans Pro semibold", sans-serif;
+      font-size: 15px;
+      margin-bottom: 40%;
+      color: #999999; }
+    .contact .social-networks li {
+      margin: 15% 0; }
+      .contact .social-networks li a {
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-size: 14px;
+        color: #999999;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .contact .social-networks li a:hover {
+          color: #E64A19; }
+
+footer {
+  background-color: #212121;
+  padding: 5% 10%; }
+  footer h2 {
+    border-top: 1px solid #999999;
+    color: #AAAAAA;
+    font-family: "Source Sans Pro Regular", sans-serif;
+    font-size: 14px;
+    margin-top: -5%;
+    padding-top: 1%; }
