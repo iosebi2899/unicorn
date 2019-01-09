@@ -166,10 +166,13 @@
     .container{
         @extend %flex-placeholder;
 
+        a{
+            margin: 2%;
+            width: $article-width;
             .featured-article{
                 
                 position: relative;
-                width: $article-width;
+                
                 background-color: #222222;
                 color: white;
                 margin-bottom: 5%;
@@ -209,6 +212,7 @@
                         right: 0%;
                     }
                 }
+            }
         }
     }
 }
@@ -501,7 +505,16 @@
             margin-left: 5%;
             font-family: $SSPSB;
             font-size: 18px;
+
+            a{
+             @include transition;   
+             color: #000000;
+
+            &:hover{
+                    color: #E64A19;
+            }
         }
+    }
         p{
             margin-left: 5%;
             font-family: $SSPR;
@@ -604,5 +617,5 @@ footer{
         margin-top: -5%;
         padding-top: 1%;
     }
-}    
- 
+}
+
