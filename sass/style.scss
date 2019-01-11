@@ -47,6 +47,7 @@
         img{
             width: 100%;
             
+            
         }
         .banner-section{
             position: absolute;
@@ -54,8 +55,13 @@
             right: 5%;
             text-align: right;
             width:40%;
+
+            
             
             .header{
+                right: 0;
+                top: -40%;
+                position: absolute;
                 text-transform: uppercase;
                 font-family: $SSPBL;
                 font-size: 72px;
@@ -92,6 +98,14 @@
                     background-color: #E64A19;  
             }
         }    
+        @media (max-width: $large){
+            right: 10%;
+
+            .header{
+                top:-30%;
+                font-size: 50px;
+            }
+        }
     }
 } 
 .who-why{
@@ -165,14 +179,20 @@
     }
     .container{
         @extend %flex-placeholder;
+        flex-wrap: wrap;
 
         a{
             margin: 2%;
             width: $article-width;
+           
+            @media (max-width: $small){
+                width: 100%;
+            }
+            
             .featured-article{
                 
                 position: relative;
-                
+                height: 100%;
                 background-color: #222222;
                 color: white;
                 margin-bottom: 5%;
