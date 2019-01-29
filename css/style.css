@@ -29,7 +29,7 @@
 .container {
   padding: 0 5%; }
 
-.main-header .container nav, .article-container .container, .featured-article-container .container, .our-team .article-container, .break-section2, footer .contact .form form {
+.main-header .container nav, .article-container .container, .featured-article-container .container, .our-team .article-container, .stories .container .stories-article, .break-section2, footer .contact .form form {
   display: flex;
   justify-content: space-between; }
 
@@ -94,9 +94,6 @@
       font-size: 18px;
       line-height: 34px;
       font-family: "Source Sans Pro Regular", sans-serif; }
-      @media (max-width: 768px) {
-        .main-banner .banner-section .content span {
-          display: none; } }
     .main-banner .banner-section .read-more {
       position: absolute;
       bottom: 0;
@@ -120,7 +117,8 @@
           color: white; }
     @media (max-width: 1120px) {
       .main-banner .banner-section {
-        width: 40%; }
+        width: 40%;
+        bottom: 25%; }
         .main-banner .banner-section .header {
           font-size: 40px;
           margin-bottom: 0px; }
@@ -134,6 +132,39 @@
         .main-banner .banner-section .read-more h3 {
           font-size: 14px;
           padding: 2.5% 0; } }
+    @media (max-width: 810px) {
+      .main-banner .banner-section {
+        bottom: 40%; }
+        .main-banner .banner-section .header {
+          font-size: 20px; }
+        .main-banner .banner-section .content {
+          line-height: 20px;
+          margin-top: 20px;
+          font-size: 14px; }
+          .main-banner .banner-section .content .deleted {
+            display: none; }
+        .main-banner .banner-section .hr {
+          top: 15%; }
+        .main-banner .banner-section .read-more {
+          bottom: 15%; }
+          .main-banner .banner-section .read-more h3 {
+            font-size: 10px;
+            padding: 2% 0; } }
+    @media (max-width: 600px) {
+      .main-banner .banner-section {
+        bottom: 50%; } }
+    @media (max-width: 450px) {
+      .main-banner .banner-section {
+        bottom: 70%; }
+        .main-banner .banner-section .header {
+          font-size: 20px; }
+        .main-banner .banner-section .content .deleted2 {
+          display: none; }
+        .main-banner .banner-section .read-more {
+          bottom: 20%; }
+          .main-banner .banner-section .read-more h3 {
+            font-size: 8px;
+            padding: 2% 0; } }
 
 .who-why {
   text-align: center;
@@ -170,7 +201,7 @@
       .article-container .container .second-section-article img {
         width: 45px;
         height: auto; }
-    @media (max-width: 768px) {
+    @media (max-width: 810px) {
       .article-container .container {
         flex-wrap: wrap;
         justify-content: space-between; }
@@ -247,7 +278,7 @@
       font-size: 20px; }
     .featured-article-container .container a .featured-article p {
       font-size: 10px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 810px) {
     .featured-article-container .container a {
       width: 48%;
       flex-wrap: wrap; }
@@ -339,16 +370,25 @@
     font-size: 16px;
     font-family: "Source Sans Pro Regular", sans-serif; }
   .our-team .article-container {
+    flex-wrap: wrap;
     padding: 10% 10%;
     background-color: white; }
-    .our-team .article-container .designer h4 {
-      padding-top: 60%;
-      padding-bottom: 10%;
-      font-size: 16px;
-      font-family: "Source Sans Pro Bold", sans-serif; }
-    .our-team .article-container .designer h5 {
-      font-size: 15px;
-      font-family: "Source Sans Pro Regular", sans-serif; }
+    .our-team .article-container .designer {
+      width: 15%; }
+      .our-team .article-container .designer img {
+        width: 100%; }
+      .our-team .article-container .designer h4 {
+        padding-top: 60%;
+        padding-bottom: 10%;
+        font-size: 16px;
+        font-family: "Source Sans Pro Bold", sans-serif; }
+      .our-team .article-container .designer h5 {
+        font-size: 15px;
+        font-family: "Source Sans Pro Regular", sans-serif; }
+    @media (max-width: 810px) {
+      .our-team .article-container .designer {
+        width: 30%;
+        padding: 5%; } }
 
 .facts-numbers {
   width: 100%;
@@ -413,75 +453,50 @@
 
 .stories {
   padding: 5% 10%; }
-  .stories .container {
-    display: block; }
-    .stories .container .stories-article {
-      position: relative;
-      width: 100%;
+  .stories .container .stories-article {
+    margin: 5% 0; }
+    .stories .container .stories-article .content {
       text-align: center;
-      margin: 10% 0; }
-      .stories .container .stories-article .content {
-        margin-right: 60%;
-        padding: 10% 0; }
-        .stories .container .stories-article .content .date {
-          font-family: "Source Sans Pro Regular", sans-serif;
-          font-size: 14px;
-          color: #555555; }
-        .stories .container .stories-article .content .head {
-          font-family: "Source Sans Pro semibold", sans-serif;
-          font-size: 24px;
-          color: #222222;
-          padding: 5% 0; }
-        .stories .container .stories-article .content .text {
-          font-family: "Source Sans Pro Regular", sans-serif;
-          font-size: 16px;
-          line-height: 28px; }
-      .stories .container .stories-article .bgphoto1 {
-        position: absolute;
-        background-image: url(../img/story1.jpg);
-        width: 45%;
-        height: 100%;
-        right: 0;
-        bottom: 0%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; }
-      .stories .container .stories-article .content2 {
-        margin-left: 60%;
-        padding: 10% 0; }
-        .stories .container .stories-article .content2 .date {
-          font-family: "Source Sans Pro Regular", sans-serif;
-          font-size: 14px;
-          color: #555555; }
-        .stories .container .stories-article .content2 .head {
-          font-family: "Source Sans Pro semibold", sans-serif;
-          font-size: 24px;
-          color: #222222;
-          padding: 5% 0; }
-        .stories .container .stories-article .content2 .text {
-          font-family: "Source Sans Pro Regular", sans-serif;
-          font-size: 16px;
-          line-height: 28px; }
-      .stories .container .stories-article .bgphoto2 {
-        position: absolute;
-        width: 45%;
-        height: 100%;
-        left: 2%;
-        bottom: 0%;
-        background-image: url(../img/story2.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; }
-      .stories .container .stories-article .bgphoto3 {
-        width: 45%;
-        height: 100%;
-        right: 0;
-        bottom: 0%;
-        position: absolute;
-        background-image: url(../img/story3.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; }
+      width: 45%;
+      padding: 5% 0; }
+      .stories .container .stories-article .content .date {
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-size: 14px;
+        color: #555555; }
+      .stories .container .stories-article .content .head {
+        font-family: "Source Sans Pro semibold", sans-serif;
+        font-size: 24px;
+        color: #222222;
+        padding: 5% 0; }
+      .stories .container .stories-article .content .text {
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-size: 16px;
+        line-height: 28px; }
+    .stories .container .stories-article .bgphoto1 {
+      background-image: url(../img/story1.jpg);
+      width: 45%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .stories .container .stories-article .bgphoto2 {
+      width: 45%;
+      height: 100%;
+      right: 2%;
+      bottom: 0%;
+      background-image: url(../img/story2.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .stories .container .stories-article .bgphoto3 {
+      background-image: url(../img/story3.jpg);
+      width: 45%;
+      height: 100%;
+      right: 0;
+      bottom: 0%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
 
 .break-section2 {
   background-color: #EFEFEF;
