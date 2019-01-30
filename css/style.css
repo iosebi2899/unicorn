@@ -419,7 +419,7 @@
       margin: 0px;
       height: 100%;
       width: 28.33333%; }
-      @media (max-width: 810px) {
+      @media (max-width: 450px) {
         .portofolio .image-container img {
           width: 80%; } }
 

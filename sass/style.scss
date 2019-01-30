@@ -537,7 +537,7 @@
            height: 100%;
            width: $img-width;
            
-           @media (max-width:$small){
+           @media (max-width:$smallest){
                width: 80%;
            }
        }
