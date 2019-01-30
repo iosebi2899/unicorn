@@ -361,7 +361,9 @@
         margin:5% 0;
         text-align: center;
         width: 55%;
-        margin-left: 22.5%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         h2{
             font-family: $SSPB;
             font-size:27px;
@@ -512,7 +514,9 @@
         width: 8%;
         height: 10px;
         margin: 5% 0;
-        margin-left: 45.5%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .inline{
         li{
@@ -650,7 +654,9 @@
                     height: 6%;
                     background-color: #4D4C4B;
                     margin: 5% 0;
-                    margin-left: 40%;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
                 h3{
                     color: #EEEEEE;
@@ -696,8 +702,11 @@
             .content{
                 text-align: center;
                 width: 45%;
-                padding: 5% 0;
+                margin: 5% 0;
 
+                @media (max-width:$small) {
+                    width: 100%;
+                }
                 .date{
                     font-family: $SSPR;
                     font-size: 14px;
@@ -707,7 +716,7 @@
                     font-family: $SSPSB;
                     font-size: 24px;
                     color: #222222;
-                    padding: 5% 0;
+                    margin: 5% 0;
                 }
                 .text{
                     font-family: $SSPR;
@@ -722,26 +731,34 @@
                 background-position: center;
                 background-repeat: no-repeat; 
                 background-size: cover;
+                @media (max-width:$small) {
+                    width: 100%;
+                }
                 }         
             .bgphoto2{
                 width: 45%;
                 height: 100%;
-                right: 2%;
-                bottom: 0%;
                 background-image: url(../img/story2.jpg);
                 background-position: center;
                 background-repeat: no-repeat; 
                 background-size: cover;
+                @media (max-width:$small) {
+                    width: 100%;
+                }
             }
             .bgphoto3{
                 background-image: url(../img/story3.jpg);
                 width: 45%;
                 height: 100%;
-                right: 0;
-                bottom: 0%;
                 background-position: center;
                 background-repeat: no-repeat; 
                 background-size: cover;
+                @media (max-width:$small) {
+                    width: 100%;
+                }
+            }
+            @media (max-width:$small) {
+                display: block;
             }
         }
     }
@@ -767,6 +784,9 @@
             font-family: $SSPSB;
             font-size: 18px;
 
+            @media (max-width:$small) {
+                margin-left: 10%;
+            }
             a{
              @include transition;   
              color: #000000;
@@ -781,6 +801,12 @@
             font-family: $SSPR;
             font-size: 14px;
             color: #555555;
+            @media (max-width:$small) {
+                margin-left: 10%;
+            }
+        }
+        @media (max-width:$small){
+            line-height: 20px;
         }
     }
 }
@@ -824,7 +850,6 @@ footer{
                     color: #999999;
                 }
                 .submit{
-                    margin-top: 40px ;
                     background-color: #212121;
                     border: 0px;
                     color: #999999;
@@ -837,7 +862,6 @@ footer{
                 text-transform: uppercase;
             }
             p{
-                margin-top: 5%;
                 font-family: $SSPR;
                 font-size: 14px;
                 color: #999999;
@@ -875,7 +899,6 @@ footer{
         color: #AAAAAA;
         font-family: $SSPR;
         font-size: 14px;
-        padding-top: 1%;
         margin-left: 10%;
     }
 }
