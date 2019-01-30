@@ -346,6 +346,11 @@
                 width: 100%;
             }
         }
+        @media (max-width:$smaller){
+            .second-section-article{
+                width: 100%;
+            }
+        }
     }    
 } 
 .featured-article-container{
@@ -495,7 +500,8 @@
         font-family: $SSPB;
         font-size: 27px;
     }
-    p{
+    p{  
+        margin: 0 5%;
         font-family: $SSPR;
         font-size: 16px;
         line-height: 33px;
@@ -530,6 +536,10 @@
            margin: 0px;
            height: 100%;
            width: $img-width;
+           
+           @media (max-width:$small){
+               width: 80%;
+           }
        }
     }
 }
@@ -542,7 +552,7 @@
         font-family: $SSPR;
         font-size: 20px;
         line-height: 33px;
-        padding: 8% 0 0 0;
+        padding: 8% 5%;
     }
     h1{
         font-family: $SSPR;
@@ -592,6 +602,11 @@
                padding:5%;
            }
         }
+        @media (max-width:$smallest){
+            .designer{
+                width: 100%;
+            }
+         }
     }
 }
 .facts-numbers {
