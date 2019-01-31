@@ -56,8 +56,10 @@
       .main-header .container .main-navigation.active {
         display: block;
         width: 100vw;
-        height: 100vh;
-        text-align: center; }
+        height: auto;
+        text-align: right; }
+        .main-header .container .main-navigation.active li {
+          padding-bottom: 20px; }
       .main-header .container .main-navigation li {
         padding: 0 20px; }
         .main-header .container .main-navigation li a {
