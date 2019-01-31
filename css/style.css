@@ -241,8 +241,8 @@
   text-align: center;
   padding: 5% 20%; }
   .who-why img {
-    width: 5%;
-    height: auto;
+    width: 55px;
+    height: 45px;
     margin-bottom: 4%; }
   .who-why h2 {
     font-family: "Source Sans Pro Bold", sans-serif;
@@ -450,7 +450,8 @@
     padding: 5% 0; }
   .our-team h3 {
     font-size: 16px;
-    font-family: "Source Sans Pro Regular", sans-serif; }
+    font-family: "Source Sans Pro Regular", sans-serif;
+    padding: 0 5%; }
   .our-team .article-container {
     flex-wrap: wrap;
     padding: 10% 10%;
@@ -458,10 +459,11 @@
     .our-team .article-container .designer {
       width: 15%; }
       .our-team .article-container .designer img {
-        width: 100%; }
+        width: 102px;
+        height: 109px; }
       .our-team .article-container .designer h4 {
-        padding-top: 60%;
-        padding-bottom: 10%;
+        padding-top: 20%;
+        padding-bottom: 5%;
         font-size: 16px;
         font-family: "Source Sans Pro Bold", sans-serif; }
       .our-team .article-container .designer h5 {
@@ -473,7 +475,8 @@
         padding: 5%; } }
     @media (max-width: 450px) {
       .our-team .article-container .designer {
-        width: 100%; } }
+        width: 60%;
+        margin: 0 auto; } }
 
 .facts-numbers {
   width: 100%;
@@ -497,10 +500,15 @@
       width: 60%;
       background-color: rgba(255, 255, 255, 0.5);
       margin: 0 20%;
+      padding-bottom: 3%;
       position: relative; }
       .facts-numbers .black-layer .article-container .facts-container {
         width: 40%;
         margin: 5%; }
+        @media (max-width: 600px) {
+          .facts-numbers .black-layer .article-container .facts-container {
+            width: 80%;
+            margin: 5% auto; } }
         .facts-numbers .black-layer .article-container .facts-container h2 {
           color: #EEEEEE;
           font-family: "Source Sans Pro Bold", sans-serif;
@@ -524,7 +532,7 @@
         position: absolute;
         left: 50%;
         right: 50%;
-        bottom: 0;
+        bottom: -1%;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -o-transition: 0.3s;
@@ -540,7 +548,11 @@
 
 .stories {
   padding: 5% 10%; }
+  @media (max-width: 810px) {
+    .stories .container :nth-child(2) {
+      flex-direction: column-reverse; } }
   .stories .container .stories-article {
+    flex-wrap: wrap;
     margin: 5% 0; }
     .stories .container .stories-article .content {
       text-align: center;
@@ -565,7 +577,7 @@
     .stories .container .stories-article .bgphoto1 {
       background-image: url(../img/story1.jpg);
       width: 45%;
-      height: 100%;
+      height: 379px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -574,7 +586,7 @@
           width: 100%; } }
     .stories .container .stories-article .bgphoto2 {
       width: 45%;
-      height: 100%;
+      height: 379px;
       background-image: url(../img/story2.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -585,16 +597,13 @@
     .stories .container .stories-article .bgphoto3 {
       background-image: url(../img/story3.jpg);
       width: 45%;
-      height: 100%;
+      height: 379px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
       @media (max-width: 810px) {
         .stories .container .stories-article .bgphoto3 {
           width: 100%; } }
-    @media (max-width: 810px) {
-      .stories .container .stories-article {
-        display: block; } }
 
 .break-section2 {
   background-color: #EFEFEF;
@@ -639,19 +648,16 @@ footer {
   background-color: #212121;
   padding: 5% 10%; }
   footer .contact {
-    padding: 5% 10%;
-    padding-bottom: 30%;
     position: relative;
     background-color: #212121; }
     footer .contact .form {
       text-align: left;
-      position: relative;
       height: 100%; }
       footer .contact .form form {
-        position: absolute;
+        position: relative;
         width: 50%;
-        flex-wrap: wrap;
-        margin: 10% 0; }
+        height: 100%;
+        flex-wrap: wrap; }
         footer .contact .form form input {
           font-family: "Source Sans Pro Regular", sans-serif; }
         footer .contact .form form .email {
@@ -666,12 +672,17 @@ footer {
           background-color: #212121;
           border: 0px;
           border-bottom: 1px solid #999999;
-          color: #999999; }
+          color: #999999;
+          margin-bottom: 20%; }
         footer .contact .form form .submit {
           background-color: #212121;
           border: 0px;
-          color: #999999; }
+          color: #999999;
+          position: absolute;
+          bottom: 5px;
+          padding: 0; }
       footer .contact .form h2 {
+        padding-bottom: 5%;
         font-family: "Source Sans Pro Bold", sans-serif;
         font-size: 22px;
         color: #EEEEEE;
@@ -680,18 +691,23 @@ footer {
         font-family: "Source Sans Pro Regular", sans-serif;
         font-size: 14px;
         color: #999999;
-        line-height: 24px; }
+        line-height: 24px;
+        width: 40%; }
+        @media (max-width: 700px) {
+          footer .contact .form p .deleted-text {
+            display: none; } }
     footer .contact .social-networks {
       position: absolute;
-      right: 20%;
-      top: 12.5%; }
+      right: 0;
+      top: 0;
+      text-align: right; }
       footer .contact .social-networks h2 {
         font-family: "Source Sans Pro semibold", sans-serif;
         font-size: 15px;
-        margin-bottom: 40%;
+        margin-bottom: 5%;
         color: #999999; }
       footer .contact .social-networks li {
-        margin: 15% 0; }
+        line-height: 24px; }
         footer .contact .social-networks li a {
           font-family: "Source Sans Pro Regular", sans-serif;
           font-size: 14px;
@@ -705,5 +721,7 @@ footer {
   footer h2 {
     color: #AAAAAA;
     font-family: "Source Sans Pro Regular", sans-serif;
-    font-size: 14px;
-    margin-left: 10%; }
+    font-size: 14px; }
+  footer .copyright {
+    border-top: 1px solid #999999;
+    padding-top: 35px; }
