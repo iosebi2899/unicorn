@@ -33,6 +33,9 @@
   display: flex;
   justify-content: space-between; }
 
+html {
+  scroll-behavior: smooth; }
+
 .main-header {
   padding: 20px 0;
   position: fixed;

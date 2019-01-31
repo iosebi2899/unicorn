@@ -4,6 +4,9 @@
 @import '_partials';
 
 
+html {
+    scroll-behavior: smooth;
+  }
 // header
 .main-header{ 
     
@@ -29,7 +32,7 @@
             }
         }
         .main-navigation{
-
+        
             &.active{
                 display: block;
                 width: 100vw;
