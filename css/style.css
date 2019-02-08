@@ -60,7 +60,8 @@ html {
         display: block;
         width: 100vw;
         height: auto;
-        text-align: right; }
+        text-align: right;
+        padding-top: 30px; }
         .main-header .container .main-navigation.active li {
           padding-bottom: 20px; }
       .main-header .container .main-navigation li {
@@ -92,7 +93,7 @@ html {
           display: block; } }
     .main-header .container .burger {
       position: absolute;
-      background: #6f6f6f;
+      background: white;
       width: 100%;
       height: 3px;
       top: 50%;
@@ -100,7 +101,7 @@ html {
       opacity: 1; }
     .main-header .container .burger::before {
       position: absolute;
-      background: #6f6f6f;
+      background: white;
       width: 100%;
       height: 3px;
       top: 5px;
@@ -108,7 +109,7 @@ html {
       display: block; }
     .main-header .container .burger::after {
       position: absolute;
-      background: #6f6f6f;
+      background: white;
       width: 100%;
       height: 3px;
       bottom: 5px;
@@ -126,7 +127,8 @@ html {
       -webkit-transform: rotate(45deg);
       top: 0px; }
     .main-header .container .burger-menu.menu-on .burger {
-      background: rgba(111, 111, 111, 0); }
+      background: rgba(111, 111, 111, 0);
+      width: 22px; }
     .main-header .container h1 {
       font-family: arial;
       letter-spacing: 4px;
@@ -440,12 +442,12 @@ html {
     font-family: "Source Sans Pro Regular", sans-serif;
     font-size: 20px;
     line-height: 33px;
-    padding: 8% 5%; }
+    padding: 3% 5%; }
   .break-section h1 {
     font-family: "Source Sans Pro Regular", sans-serif;
     font-size: 20px;
     line-height: 33px;
-    padding: 5% 0; }
+    padding: 3% 0; }
 
 .our-team {
   text-align: center; }
@@ -661,6 +663,11 @@ footer {
         flex-wrap: wrap; }
         footer .contact .form form input {
           font-family: "Source Sans Pro Regular", sans-serif; }
+          footer .contact .form form input:focus {
+            outline: none; }
+        @media (max-width: 600px) {
+          footer .contact .form form {
+            width: 100%; } }
         footer .contact .form form .email {
           background-color: #212121;
           border: 0px;
@@ -676,12 +683,19 @@ footer {
           color: #999999;
           margin-bottom: 20%; }
         footer .contact .form form .submit {
+          text-align: left;
           background-color: #212121;
           border: 0px;
           color: #999999;
           position: absolute;
           bottom: 5px;
           padding: 0; }
+          @media (max-width: 600px) {
+            footer .contact .form form .submit {
+              bottom: 50px;
+              border-bottom: 1px solid #999999;
+              padding-bottom: 5px;
+              width: 100%; } }
       footer .contact .form h2 {
         padding-bottom: 5%;
         font-family: "Source Sans Pro Bold", sans-serif;
@@ -707,9 +721,9 @@ footer {
         font-size: 15px;
         margin-bottom: 5%;
         color: #999999; }
-      footer .contact .social-networks li {
+      footer .contact .social-networks .socials li {
         line-height: 24px; }
-        footer .contact .social-networks li a {
+        footer .contact .social-networks .socials li a {
           font-family: "Source Sans Pro Regular", sans-serif;
           font-size: 14px;
           color: #999999;
@@ -717,8 +731,19 @@ footer {
           -moz-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s; }
-          footer .contact .social-networks li a:hover {
+          footer .contact .social-networks .socials li a:hover {
             color: #E64A19; }
+      @media (max-width: 600px) {
+        footer .contact .social-networks {
+          position: relative;
+          margin: 0 auto;
+          text-align: left;
+          width: 100%; }
+          footer .contact .social-networks .socials {
+            display: flex;
+            justify-content: space-between; }
+            footer .contact .social-networks .socials li a {
+              font-size: 10px; } }
   footer h2 {
     color: #AAAAAA;
     font-family: "Source Sans Pro Regular", sans-serif;
@@ -726,3 +751,6 @@ footer {
   footer .copyright {
     border-top: 1px solid #999999;
     padding-top: 35px; }
+    @media (max-width: 600px) {
+      footer .copyright {
+        margin-top: 10px; } }
