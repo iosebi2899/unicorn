@@ -855,13 +855,22 @@ footer{
                     border-bottom: 1px solid #999999;
                     margin: 5% 0;
                 }
+                .email.subject{
+                    @media (max-width:$smaller){
+                        width: 50%;
+                        margin-left: 2%;
+                    }
+                }
                 .message{
-                    width: 99%;
+                    width: 100%;
                     background-color: #212121;
                     border: 0px;
                     border-bottom: 1px solid #999999;
                     color: #999999;
                     margin-bottom: 20%;
+                    @media (max-width:$smaller){
+                        width: 100%;
+                    }
                 }
                 .submit{
                     text-align: left;
@@ -872,7 +881,7 @@ footer{
                     bottom:5px;
                     padding:0;
                     @media (max-width:$smaller){
-                        bottom: 50px;
+                        bottom: 30px;
                         border-bottom: 1px solid #999999;
                         padding-bottom: 5px;
                         width: 100%;
