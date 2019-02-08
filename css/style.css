@@ -55,10 +55,12 @@ html {
         .main-header .container h2 {
           font-size: 12px; } }
     .main-header .container .main-navigation {
+      height: 0px;
+      transition: 1s height;
       text-transform: uppercase; }
       .main-header .container .main-navigation.active {
         display: block;
-        width: 100vw;
+        width: 300vw;
         height: auto;
         text-align: right;
         padding-top: 30px; }
@@ -748,9 +750,13 @@ footer {
           width: 100%; }
           footer .contact .social-networks .socials {
             display: flex;
-            justify-content: space-between; }
+            justify-content: space-between;
+            flex-wrap: wrap; }
             footer .contact .social-networks .socials li a {
               font-size: 10px; } }
+      @media (max-width: 450px) {
+        footer .contact .social-networks .socials {
+          justify-content: space-around; } }
   footer h2 {
     color: #AAAAAA;
     font-family: "Source Sans Pro Regular", sans-serif;

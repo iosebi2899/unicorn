@@ -32,10 +32,11 @@ html {
             }
         }
         .main-navigation{
-                
+                height:0px;
+                transition: 1s height;
             &.active{
                 display: block;
-                width: 100vw;
+                width: 300vw;
                 height: auto;
                 text-align: right;
                 padding-top:30px;
@@ -945,11 +946,19 @@ footer{
                 .socials{
                     display: flex;
                     justify-content: space-between;
-
+                    flex-wrap: wrap;
                     li{
                         a{
                             font-size: 10px;
                         }
+                    }
+                }
+            }
+            @media (max-width:$smallest){
+                .socials{
+                    justify-content: space-around;
+                    li{
+
                     }
                 }
             }
