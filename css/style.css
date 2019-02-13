@@ -755,8 +755,8 @@ footer {
             footer .contact .social-networks .socials li a {
               font-size: 10px; } }
       @media (max-width: 450px) {
-        footer .contact .social-networks .socials {
-          justify-content: space-around; } }
+        footer .contact .social-networks .socials :nth-child(7) {
+          display: none; } }
   footer h2 {
     color: #AAAAAA;
     font-family: "Source Sans Pro Regular", sans-serif;

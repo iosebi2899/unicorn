@@ -956,9 +956,9 @@ footer{
             }
             @media (max-width:$smallest){
                 .socials{
-                    justify-content: space-around;
-                    li{
-
+                    
+                    :nth-child(7){
+                        display: none;
                     }
                 }
             }
