@@ -261,6 +261,9 @@ html {
     font-size: 16px;
     padding-top: 10%;
     line-height: 33px; }
+    @media (max-width: 450px) {
+      .who-why h3 .deleted4 {
+        display: none; } }
 
 .article-container {
   background-color: #EFEFEF; }
@@ -709,6 +712,9 @@ footer {
               border-bottom: 1px solid #999999;
               padding-bottom: 5px;
               width: 100%; } }
+          @media (max-width: 450px) {
+            footer .contact .form form .submit {
+              bottom: 15px; } }
       footer .contact .form h2 {
         padding-bottom: 5%;
         font-family: "Source Sans Pro Bold", sans-serif;
@@ -759,7 +765,7 @@ footer {
             footer .contact .social-networks .socials li a {
               font-size: 10px; } }
       @media (max-width: 450px) {
-        footer .contact .social-networks .socials :nth-child(7) {
+        footer .contact .social-networks .socials .for-disapear a {
           display: none; } }
   footer h2 {
     color: #AAAAAA;
