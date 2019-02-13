@@ -614,6 +614,12 @@ html {
                padding: 5%;
            }
         }
+        @media (max-width:$smallest){
+            .designer{
+                width: 90%;
+                padding: 5%;
+            }
+         }
     }
 }
 .facts-numbers {

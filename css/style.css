@@ -482,6 +482,10 @@ html {
       .our-team .article-container .designer {
         width: 30%;
         padding: 5%; } }
+    @media (max-width: 450px) {
+      .our-team .article-container .designer {
+        width: 90%;
+        padding: 5%; } }
 
 .facts-numbers {
   width: 100%;
